@@ -62,13 +62,13 @@ function gameOver (situacao) {
         break
 
         case 'Chute maior':
-            mensagemRapida('Chute maior que o número secreto')
+            mensagemRapida('Seu chute foi maior que o número secreto')
             aviso.classList.add('errou')
         break
 
         case 'Chute menor':
             aviso.classList.add('errou')
-            mensagemRapida('Chute menor que o número secreto')
+            mensagemRapida('Seu chute foi menor que o número secreto')
         break
 
         default:
