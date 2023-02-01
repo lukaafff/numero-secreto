@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Número secreto</title>
+</head>
+<body onLoad='gerarNumeroSecreto()'>
+    <main id="tela-inicio">
+        <div id="titulo"><h1>Adivinhe o número secreto</h1></div>
+        <p class="centro" id="dica">Digite um número entre 1 e 10</p>
+        <section class="conteudo">
+            <input 
+            type="number"
+            step="1"
+            min="1"
+            max="10"
+            name="inputNumero"
+            id="inputNumero"
+            class="input"
+            onblur="validarNumeroDigitado(this.value)"
+            onclick="ativarBtnChutar()"
+            />
+
+            <button
+            id="btnChutar"
+            class="botao"
+            onclick="jogar()"
+            >Chutar</button>
+            <br>
+        </section>
+        <p class="centro" id="aviso"></p>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
